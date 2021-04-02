@@ -1,0 +1,227 @@
+.header-encabezado{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/fondo-header-marketing.jpeg') ;
+    background-color: rgba(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+
+.header-texto h3{
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 300;
+}
+.contenedor-marketing{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.contendor-marketing-first{
+    text-align: center;
+   /*  background-color: #001f2f; */
+    background-color: #fff;
+    padding: 40px 0;
+ /*    padding: 20px 0; */
+}
+.contendor-marketing-first h3{
+    color: #000;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 60px;
+    padding: 10px 0;
+}
+.contendor-marketing-first p{
+   /*  margin: 0 300px; */
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: #000;
+    font-size: 25px;
+}
+.contenedor-marketing-images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 20px 0;
+}
+.contenedor-marketing-images img{
+    width: 400px;
+    height: 400px;
+    padding: 0;
+}
+.images-marketing p{
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: #000;
+    font-size: 20px;
+    padding: 0 80px;
+}
+.images-marketing p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fffb59 ;
+    display: block;
+    margin: 0 0 120px 0;
+}
+.contenedor-marketing-second{
+    width: 100%;
+    padding: 20px 0;
+    background-image: url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-color: rgb(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-wrap: wrap;
+}
+.marketing-second-text{
+    text-align: center;
+    justify-content: center;
+    padding: 40px 10px;
+    margin: 0 auto;
+}
+.marketing-second-text h4{
+    font-size: 40px;
+    color: #fff;
+    padding: 10px 0;
+}
+.marketing-second-text p{
+    font-size: 20px;
+    color: #fff;
+}
+.marketing-second-text ul li{
+    color: #fff;
+    padding: 10px 0;
+}
+.marketing-second-text button{
+    align-content: center;
+}
+
+@media (max-width: 800px){
+    .images-marketing{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .images-marketing p{
+        margin: 0;
+        align-self: center;
+        font-size: 25px;
+    }
+    .contenedor-marketing-second{
+        align-items: center;
+        justify-content: center;
+        margin:  0 auto;
+    }
+    .marketing-second-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 765px){
+    .contendor-marketing-first h3{
+        font-size: 40px;
+        padding: 10px 0;
+    }
+    .contendor-marketing-first p{
+        margin: 0 50px;
+        font-size: 20px;
+    }
+    .images-marketing {
+        align-items: center;
+        justify-content: center;
+        margin:  0 auto;
+    }
+
+}
+@media (max-width: 690px){
+    .images-marketing {
+        align-items: center;
+        justify-content: center;
+        margin:  0 auto;
+    }
+    .marketing-second-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .marketing-second-text button{
+       margin: 0;
+    }
+    .marketing-second-text h4{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    .marketing-second-text p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    .contendor-marketing-first h3{
+       
+        font-size: 30px;
+        padding: 10px;
+    }
+    .contendor-marketing-first p{
+        margin: 0 10px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .contenedor-marketing-images img{
+        width: 300px;
+        height: 300px;
+        padding: 0;
+    }
+    .images-marketing p{
+        font-size: 25px;
+    }
+    .marketing-second-text h4{
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    .marketing-second-text p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px){
+    .marketing-second-text ul li{
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    .marketing-second-text h4{
+        width: 100%;
+        font-size: 25px;
+        padding: 10px 0;
+        font-weight: 500;
+    }
+    .marketing-second-text p{
+        font-size: 18px;
+        padding: 10px 0;
+        font-weight: bolder;
+    }
+    .images-marketing p{
+        font-size: 25px;
+    }
+}
+@media (max-width: 400px){
+    .contenedor-marketing-second{
+        width: 100%;
+    }
+   
+    .images-marketing p{
+        font-size: 20px;
+    }
+}

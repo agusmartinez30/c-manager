@@ -1,0 +1,126 @@
+.header-encabezado{
+    flex-direction: column;
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/18/13/05/ecommerce-3546296_960_720.jpg') ;
+    background-color: rgb(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+
+}
+.contenedor-tienda-title{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+.contenedor-tienda-title h3{
+    font-family: 'Rubik';
+    font-size: 60px;
+    padding: 20px 0;
+}
+.contenedor-tienda-title img{
+    width: 300px;
+    height: 300px;
+}
+
+.contenedor-tienda-first{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.tienda-first-image{
+    display: flex;
+}
+.tienda-first-image img{
+    width: 600px;
+    padding: 20px;
+    object-fit: contain;
+}
+.tienda-first-text{
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+    align-self: center;
+}
+.tienda-first-text h3{
+    color: red;
+    font-size: 40px;
+    padding: 20px 0;
+}
+.contenedor-tienda-first p{
+    color: #000;
+    font-size: 20px;
+}
+.contenedor-tienda-second{
+    width: 100%;
+    background-color: #1c2421;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tienda-second-text{
+    width: 400px;
+    padding: 20px;
+}
+.tienda-second-text h3{
+    font-size: 40px;
+    color: yellow;
+}
+.tienda-second-text p{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.tienda-second-img{
+    align-self: center;
+}
+
+@media (max-width: 800px){
+    .contenedor-tienda-title h3{
+        font-size: 45px;
+    }
+    .tienda-first-text{
+        width: 100%;
+        padding: 40px;
+    }
+    .tienda-first-text p{
+        font-size: 25px;
+    }
+    .tienda-second-text{
+        width: 100%;
+        padding: 40px;
+    }
+    .tienda-second-text p{
+        font-size: 25px;
+    }
+
+}
+@media (max-width: 600px){
+    .tienda-first-image img{
+        width: 400px;
+        padding: 20px;
+        object-fit: contain;
+    }
+}
+@media (max-width: 400px){
+    .tienda-first-image img{
+        width: 300px;
+        padding: 20px;
+        object-fit: contain;
+    }
+    .tienda-second-img img{
+        width: 300px;
+        padding: 20px;
+        object-fit: contain;
+    }
+    .tienda-first-text p{
+        font-size: 20px;
+    }
+    .tienda-second-text p{
+        font-size: 20px;
+    }
+}

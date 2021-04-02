@@ -1,0 +1,45 @@
+.header-encabezado{
+    background-image: url('../img/header-sobre-nosotros.webp');
+    background-color: rgb(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+
+.contenedor-team h3{
+    font-size: 50px;
+    font-family: 'Raleway';
+}
+.contenedor-team h3::after{
+    content: "";
+    width: 40%;
+    height: 8px;
+    background: #fffb59 ;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+.contenedor-team{
+    padding: 30px;
+    margin: 20px 0;
+}
+.contendor-equipo{
+    padding: 30px 0;
+}
+.persona{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.persona img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+ @media (max-width: 505px){
+    .contenedor-team h3{
+        font-size: 30px;
+        font-family: 'Raleway';
+    }
+ }

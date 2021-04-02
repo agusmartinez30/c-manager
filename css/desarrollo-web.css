@@ -1,0 +1,132 @@
+.header-encabezado{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://image.freepik.com/foto-gratis/diseno-web-online_53876-95309.jpg') ;
+    background-color: rgb(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+.servicios-web-first{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.servicios-web-first h3{
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+}
+.servicios-web-first p{
+    font-size: 25px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.servicios-web-second{
+    background-color: #001f2f;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.servicios-web-second h4{
+    font-size: 60px;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contenedor-second{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    color: #fff;
+}
+.contenedor-second p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+.contenedor-second p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fffb59 ;
+    display: block;
+    margin: 10px 0 0 0;
+}
+.contenedor-card{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+    
+}
+.card{
+    text-align: center;
+    margin: 20px;
+    padding: 20px 0;
+}
+.card-title{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #28315c;
+}
+.estilo-card-text{
+    color: #001f2f;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 20px;
+}
+.estilo-card-text span{
+    font-size: 40px;
+}
+@media (max-width: 750px){
+    .servicios-web-first h3{
+        font-size: 50px;
+    }
+    .servicios-web-first p{
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .servicios-web-second h4{
+        font-size: 50px;
+    }
+}
+@media (max-width: 600px){
+    .contenedor-second{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-second p{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 450px){
+    .servicios-web-first h3{
+        font-size: 35px;
+    }
+    .servicios-web-first p{
+        font-size: 15px;
+    }
+    .servicios-web-second h4{
+        font-size: 25px;
+    }
+    .card-title{
+        font-size: 25px;
+        font-weight: bolder;
+        color: #28315c;
+    }
+}

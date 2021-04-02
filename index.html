@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C-MANAGER | Agencia Digital</title>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-   <!--  Fuentes de Google Fonts -->
+    <!--  Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    
     <!-- mdb md -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -26,16 +27,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-
-
+    
+    
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="css/estilo.css">
 
-    <link rel="stylesheet" href="estilo.css">
+
+    <title> C-Manager | Agencia Digital</title>
 </head>
 <body>
     <header class="contenedor-header">
-
         <!--Navbar -->
     <nav id="nav" class="mb-1 navbar navbar-expand-lg navbar-dark  scrolling-navbar fixed-top ">
     <div class="container">
@@ -53,16 +56,21 @@
               <a class="nav-link-custom " href="index.html"> Inicio <span class="sr-only">(current)</span>
               </a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link-custom nav-link-service dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Servicios</a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="servicios/desarrollo-web.html">Desarrollo Web</a>
+                  <a class="dropdown-item" href="servicios/marketing-digital.html">Marketing Digital</a>
+                  <a class="dropdown-item" href="servicios/e-commerce.html">E-commerce</a>
+                </div>
+              </li>
             <li class="nav-item">
-              <a class="nav-link-custom" href="servicios.html">
-               Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link-custom" href="#">
-                 Trabajos</a>
+                <a class="nav-link-custom" href="trabajos.html">
+                 Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link-custom" href="#">
+                <a class="nav-link-custom" href="nosotros.html">
                  Nosotros</a>
               </li>
               <li class="nav-item ">
@@ -83,7 +91,7 @@
                 <a href="#servicios"> <i class="fas fa-chevron-down"></i></a>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5493547642758&text=Hola!%20Quiero%20contactarme%20con%20ustedes!" target="_blank">
-                <button type="button"class="btn btn-success whatsapp">
+                <button type="button"class="btn  whatsapp">
                     <i class="fab fa-whatsapp  "></i>
                 </button>
                 
@@ -94,79 +102,118 @@
     <section class="servicios" id="servicios">
         <h1>Nuestros Servicios</h1>
         <div class="servicios-container">
-            <div class="servicios-card">
-                <img src="img/Web development _Flatline (1).svg" alt="">
-                <h3>Desarrollo Web</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit.</p>
-               
-            </div>
-            <div class="servicios-card">
-                <img src="img/Marketing _Flatline.svg" alt="">
-                <h3>Marketing Digital</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit.</p>
-               
-               
-            </div>
-            <div class="servicios-card">
-                <img src="img/ecommerce.svg" alt="">
-                <h3>E-commerce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit.</p>
-               
-            </div>
+            <a class="margin-a" href="servicios/desarrollo-web.html">
+                <div class="servicios-card ">
+                    <img src="img/Web development _Flatline (1).svg" alt="">
+                    <h3>Desarrollo Web</h3>
+                    <p> Vos tambien podes tener un sitio web asombroso, adaptable a dispositivos moviles</p>
+                </div>
+            </a>
+            <a class="margin-a" href="servicios/marketing-digital.html">
+                <div class="servicios-card">
+                    <img src="img/Marketing _Flatline.svg" alt="">
+                    <h3>Marketing Digital</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit.</p>
+                </div>
+            </a>
+            <a class="margin-a" href="servicios/e-commerce.html">
+                <div class="servicios-card">
+                    <img src="img/ecommerce.svg" alt="">
+                    <h3>E-commerce</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit.</p>
+                   
+                </div>
+            </a>
+           
         </div>
 
     </section>
+    <section class="sobre-nosotros">
+        <div class="contenedor-sobre-nosotros">
+            <h3>Sobre Nosotros</h3>
+            <p>Brindamos soluciones digitales para negocios, ofrecemos múltiples servicios necesarios en la actualidad para posicionar tu marca y alcanzar una mayor cantidad de clientes, nos encargamos de ampliar el rango de alcance de tus productos o servicios.</p>
+        </div>
+    </section>
     <section class="trabajos">
-        <h2>Ultimos Trabajos</h2>
+        <h2>Servicios que te pueden interesar</h2>
      <!--Carousel Wrapper-->
-        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+       <!--  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel"> -->
                                      <!--Indicators-->
-                <ol class="carousel-indicators">
+                <!-- <ol class="carousel-indicators">
                 <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-1z" data-slide-to="1"></li>
                 <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                </ol>
+                </ol> -->
                                  <!--/.Indicators-->
    
                                  <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
+                 <!--    <div class="carousel-inner" role="listbox"> -->
                     <!--First slide-->
-                        <div class="carousel-item active">
+                       <!--  <div class="carousel-item active">
                             <img class="d-block " src="img/Mockup-NotebookMesa-de-trabajo-3-scaled.jpg"
                             alt="First slide">
-                        </div>
+                        </div> -->
                         <!--/First slide-->
                         <!--Second slide-->
-                        <div class="carousel-item">
+                       <!--  <div class="carousel-item">
                             <img class="d-block " src="img/Habrok.png"
                             alt="Second slide">
-                        </div>
+                        </div> -->
                         <!--/Second slide-->
                         <!--Third slide-->
-                        <div class="carousel-item">
+                       <!--  <div class="carousel-item">
                             <img class="d-block " src="img/Mockup-NotebookMesa-de-trabajo-3-scaled.jpg"
                             alt="Third slide">
-                        </div>
+                        </div> -->
                     <!--/Third slide-->
-                    </div>
+                    <!-- </div> -->
                     <!--/.Slides-->
 
                     <!--Controls-->
-                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                   <!--  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next "  href="#carousel-example-1z" role="button" data-slide="next">
                     <span class="carousel-control-next-icon "  aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                    </a>
+                    </a> -->
                     <!--/.Controls-->
-         </div>
+         <!-- </div> -->
                                      <!--/.Carousel Wrapper-->
+                                     <div class="contenedor-card d-flex justify-content-around flex-wrap ">
+                                         <div class="card  my-2">
+                                                 <img src="https://edicionesnye.com/wp-content/uploads/2020/06/Desarrollo-pagina-web-wordpress-ediciones-nye-1-300x300.png" alt="">
+                                             <div class="card-body bg-danger">
+                                                 <h5 class="card-title text-light text-center">DISEÑO WEB</h5>
+                                                 <p class="card-text text-light text-center fs-5">$3000</p>
+                                             </div>
+                                         </div>
+                                         <div class="card my-2">
+                                             <img src="https://edicionesnye.com/wp-content/uploads/2020/06/Post-para-redes-sociales-ediciones-nye-300x300.png" alt="">
+                                             
+                                             <div class="card-body bg-primary">
+                                                 <h5 class="card-title text-light text-center">REDES SOCIALES</h5>
+                                                 <p class="card-text text-light text-center fs-5">$3000</p>
+                                             </div>
+                                         </div>
+                                         <div class="card my-2">
+                                            <img src="https://edicionesnye.com/wp-content/uploads/2020/06/Flyer-10x15-ediciones-nye-300x300.png" alt="">
+                                            <div class="card-body  bg-warning">
+                                                <h5 class="card-title text-dark text-center">DISEÑO DE FLYER</h5>
+                                                <p class="card-text  text-dark text-center fs-5">$3000</p>
+                                            </div>
+                                        </div>
+                                     </div>
+
+
+
+
+
 
                 <!-- button -->
                     <div class="link-trabajos"> 
-                        <a href=""><button type="button" class="btn btn-outline-grey-lighten-5 btn-rounded waves-effect">Nuestros Trabajos</button>
+                        <a href="trabajos.html"><button type="button" class="btn btn-outline-grey-lighten-5 btn-rounded waves-effect">Ver Tienda</button>
                         </a>
                     </div>
     </section>
@@ -176,6 +223,7 @@
             <p>Team C-Manager</p>
                 <a href=""><button type="button">Conocenos</button></a>
         </div>
+        
     </section>
     <section class="contacto " id="contacto">
         <div class="contacto-texto">
@@ -205,13 +253,13 @@
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
                             <label class="form-check-label" for="flexCheckChecked">
                               Marketing Digital
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
                             <label class="form-check-label" for="flexCheckChecked">
                               Tienda/E-commerce
                             </label>
@@ -231,15 +279,15 @@
                 <img src="img/imageonline-co-brightnessadjusted.png" alt="">
                 <p>C-MANAGER</p>
             </div>
-            <div class="footer-texto">
-                <h3>Sobre Nosotros</h3>
-                <p>Somos una Empresa de Marketing Digital, Desarrollo Web y E-commerce, orientada a ofrecerle a nuestros clientes soluciones y estrategias para incrementar sus ventas, llegar a prospectos y aumentar su visibilidad online.</p>
+            <div class="footer-bitcoin">
+                <img src="img/bitcoin-logo-.jpg" alt="Bitcoin" title="Bitcoin" >
             </div>
             <div class="footer-texto">
                 <h3>Contacto</h3>
                 <p>Email: cmanager268@gmail.com</p>
                 <p>Tel: 3547 642758</p>
             </div>
+           
         </div>
 
 
