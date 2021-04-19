@@ -1,0 +1,85 @@
+.header-encabezado{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://ius360.com/wp-content/uploads/2020/06/ecommerce-01-1.jpg');
+    background-color: rgb(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+.contenedor-tienda-title h3{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+}
+.contenedor-tienda-first{
+    display: flex;
+    justify-content: space-around;
+}
+.contenedor-tienda-first img{
+    width: 50%;
+    padding: 30px;
+    object-fit: contain;
+}
+.tienda-first-text{
+    padding: 30px;
+    width: 50%;
+}
+.tienda-first-text h3{
+    text-align: center;
+    font-size: 30px;
+}
+.tienda-first-text p{
+    padding: 10px;
+    font-size: 20px;
+}
+.contenedor-tienda-second{
+    background-color: #461237;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.tienda-second-text{
+    padding: 30px;
+    width: 50%;
+}
+.tienda-second-text h3{
+    font-size: 40px;
+    color: #fff;
+    text-transform: initial;
+}
+.tienda-second-text p{
+    font-size: 20px;
+    color: #fff;
+}
+.tienda-second img{
+    width: 50%;
+    padding: 30px;
+    object-fit: contain;
+}
+
+@media  (max-width: 990px){
+    .contenedor-tienda-first{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-tienda-first img{
+        width: 100%;
+    }
+    .tienda-first-text{
+        width: 100%;
+    }
+    .contenedor-tienda-second{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-tienda-second img{
+        width: 100%;
+    }
+    .tienda-second-text{
+        width: 100%;
+    }
+}
