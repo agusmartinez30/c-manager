@@ -16,14 +16,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
-  
-  
-  <!-- boostrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
-  <!-- mdb md -->
-  <!-- Font Awesome -->
+      <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -32,18 +29,12 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/e-commerce.css">
   
 </head>
 
-<body>
+<body  class="body">
   <header class="contenedor-header">
     <!--Navbar -->
     <nav id="nav" class="mb-1 navbar navbar-expand-lg navbar-dark  scrolling-navbar fixed-top ">
@@ -69,6 +60,7 @@
                     <a class="dropdown-item" href="desarrollo-web.html">Desarrollo Web</a>
                     <a class="dropdown-item" href="marketing-digital.html">Marketing Digital</a>
                     <a class="dropdown-item" href="e-commerce.html">E-commerce</a>
+                    <a class="dropdown-item" href="menuqr.html">Menu QR</a>
                   </div>
                 </li>
               <li class="nav-item">
@@ -139,55 +131,53 @@
       
     </div>
   </section>
-  <section class="contacto " id="contacto">
-    <div class="contacto-texto">
-      <h3>Preguntanos</h3>
-      <p>Estaremos encantados de poder ayudarte.</p>
-    </div>
-    <form class="contacto-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <input type="email" class="form-control input" placeholder="Nombre" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
+  
+  <div class="contenedor-btn-modal">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Lo Quiero</button>
+    <div class="modal fade" role="dialog" id="loginModal">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Contacto!</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>    
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                      <input type="number" class="form-control" placeholder="Telefono">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col mt-2">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <textarea class="form-control mt-2 alto-mensaje" placeholder="Mensaje" style="resize: none;"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col mt-2">
+                      <select class="form-control form-select">
+                        <option selected>Servicios..</option>
+                        <option value="1">Desarrollo Web</option>
+                        <option value="2">Marketing Digital</option>
+                        <option value="3">Tieda/E-commerce</option>
+                      </select>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">Sign In</button>
+              </div>
           </div>
-          <div class="col-md-6">
-            <input type="text" placeholder="Telefono" class="form-control input" id="exampleInputPassword1">
-          </div>
-          <div class="col-md-12">
-            <input type="text" class="form-control input my-3" placeholder="Email">
-          </div>
-          <div class="col-md-12">
-            <textarea class="form-control  alto-mensaje" placeholder="Mensaje" style="resize: none;"></textarea>
-          </div>
-          <div class="contenedor-check">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Desarrollo Web
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Marketing Digital
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Tienda/E-commerce
-              </label>
-            </div>
-          </div>
-          <div class="input-group-btn col-md-12 d-flex " style="margin-top: 10px">
-            <button type="button">Enviar</button>
-          </div>
-        </div>
       </div>
-
-    </form>
-  </section>
+    </div>
+  </div>
   <footer class="footer">
     <div class="footer-contenedor">
         <div class="footer-logo">
@@ -220,17 +210,21 @@
 
 </footer>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-  <script src="../app.js"></script>
+<script src="app.js"></script>
+<script src="../app.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+ 
 
 </body>
 </html>

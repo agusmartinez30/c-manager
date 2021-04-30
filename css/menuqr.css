@@ -1,0 +1,119 @@
+
+.header-encabezado{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1600147131759-880e94a6185f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80');
+    background-color: rgb(73, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+.contendor-first{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #03213a;
+    padding: 30px;
+}
+.first-img{
+    width: 500px;
+}
+.first-img img{
+    width: 100%;
+}
+.menu-desc{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px ;
+}
+.menu-desc h4{
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #fff;
+}
+.menu-desc h5{
+    padding: 30px 0;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+}
+.menu-desc p{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.btn{
+    width: 150px;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay.activo{
+    display: flex;
+}
+.modal{
+    display: none;
+}
+.modal-footer button{
+    margin: 0 auto;
+    background-color: aqua;
+}
+.modal-header h3{
+    text-align: center !important;
+}
+.footer{
+    border-top: 1px solid rgba(204, 204, 204, 0.274);
+}
+.contenedor-btn-modal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 800px){
+    .first-img{
+        width: 100%;
+    }
+    .menu-desc{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .menu-desc h5{
+        padding: 30px 0;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bolder;
+    }
+}
+@media (max-width: 450px){
+    .menu-desc{
+        width: 100%;
+        padding: 10px;
+    }
+    .menu-desc h4{
+        font-size: 26px;
+        text-align: center;
+        font-family: 'Roboto';
+        color: #fff;
+    }
+}

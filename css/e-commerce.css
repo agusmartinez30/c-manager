@@ -60,6 +60,20 @@
     padding: 30px;
     object-fit: contain;
 }
+.contenedor-btn-modal{
+    background-color: #461237;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
 
 @media  (max-width: 990px){
     .contenedor-tienda-first{

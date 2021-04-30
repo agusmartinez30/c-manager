@@ -72,15 +72,16 @@
 }
 .container-abonos{
     padding: 20px;
-    background-color: #461237;
+    background-color: #03213a;
 }
 .container-abonos h4{
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
 }
 .container-abonos p{
     color: #fff;
-    font-size: 22px;
+    font-size: 25px;
     font-family: 'Varela', sans-serif;
     font-family: 'Titillium Web', sans-serif;
     padding: 30px;
@@ -97,6 +98,10 @@
 
 .abonos img{
    width: 600px;
+}
+
+.footer{
+    border-top: 1px solid rgba(204, 204, 204, 0.274);
 }
 @media (max-width: 1020px){
     .abonos-text-p{
